@@ -1,0 +1,102 @@
+
+body{
+    margin: 0;
+    background-color: rgb(223, 216, 207);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.menu{
+    background-color: rgb(232, 202, 202);
+     height: 100vh;
+     width: 200px;
+     padding: 10px;
+     list-style-type: none;
+     position: fixed;
+     margin: 0 auto;
+     box-shadow: 5px 5px 5px  gray;
+     
+ 
+ }
+
+ 
+a{
+    text-decoration: none;
+    color: aliceblue;
+    
+}
+
+.menu__header{
+    font-weight: bold;
+    padding: 15px;
+    
+    
+}
+
+.menu__item__active{
+    background-color: brown;
+}
+
+.menu__item img{
+    width: 30px;
+    vertical-align: middle;
+    
+}
+
+.menu__item:hover{
+    background-color: antiquewhite;
+    cursor: pointer;
+    text-align: center
+}
+
+.content{
+    margin-left: 250px;
+    
+}
+.header{
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 65px;
+    padding-top: 20px; 
+
+}
+
+.green{
+    background-color: rgb(64, 196, 97);
+}
+.yellow{
+    background-color: rgb(196, 130, 54);
+}
+.blue{
+    background-color: rgb(30, 30, 107);
+}
+.white{
+    color: aliceblue;
+}
+.pink{
+    background-color: palevioletred;
+}
+.grey{
+    color: grey;
+}
+
+
+
+.menu__footer{
+    list-style-type: none;
+    display: flex;
+    padding: 0%;
+    justify-content: center;
+
+   
+}
+
+
+.item__footer{
+    padding-right: 10px;
+
+
+}
+
+.signature{
+    display: flex;
+    justify-content: center;
+}
