@@ -6,13 +6,16 @@
 }
 
 .card{
-    width: 20%;
+    width: 50%;
     border:  1px solid rgba(0, 0, 0, 0.152);
     padding: 10px;
     position: relative;
     box-shadow: 5px 5px 5px  grey;
   
    
+}
+.header-dashboard{
+    padding-right: 20px;
 }
 .card__footer{
     text-align: start;
@@ -54,9 +57,23 @@
     margin-bottom: 50px;
     padding: 20px;
 }
+.adaptive{
+    width: 100%;
+    display: flex;
+}
+.box__table{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding: 20px;
+}
 
-
-
+.box__news{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding: 20px;
+}
 .news__card{
     width: 30%;
     box-shadow: 5px 5px 5px  grey;
@@ -105,8 +122,9 @@
 }
 .table__items{
     display: flex;
-    
-    justify-content: space-evenly;
+    padding: 0 50px;
+    justify-content: space-between;
+
     align-items: center;
     padding-bottom: 10px;
 }
@@ -128,5 +146,161 @@
     color: white;
 }
 
+.table__items__header{
+    width: 30%;
+
+}
+
+@media screen and (min-width: 650px) and (max-width: 1000px){
+        .box__card{
+             display: block;
+        }
+
+    
+
+        .box__table{
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .adaptive{
+            display: flex;
+            justify-content: center;
+            align-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .box__news{
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+
+        .card{
+            margin-bottom: 50px;
+        }
+
+        .table__card{
+            border:  1px solid rgba(0, 0, 0, 0.152);
+            width: 90%;
+            box-shadow: 5px 5px 5px  grey;
+            margin-bottom: 50px;
+            background-color: antiquewhite;
+        }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 650px){
+    .box__card{
+        display: block;
+    }
+
+    .news__card {
+        width: 95%;
+        margin-bottom: 50px;
+        box-shadow: 5px 5px 5px grey;
+        border: 1px solid rgba(0, 0, 0, 0.152);
+        padding: 10px;
+    }
+
+    .box__news{
+        display: block;
+    }
+
+    .box__table{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        
+    }
+    .card {
+        width: 80%;
+        margin-bottom: 50px;
+        border: 1px solid rgba(0, 0, 0, 0.152);
+        padding: 10px;
+        position: relative;
+        box-shadow: 5px 5px 5px grey;
+        margin-right: 10px;
+    }
+    .table__card {
+        border: 1px solid rgba(0, 0, 0, 0.152);
+        width: 90%;
+        box-shadow: 5px 5px 5px grey;
+        margin-bottom: 50px;
+        background-color: antiquewhite;
+    }
+
+    .box__table{
+        display: block;
+    }
+
+    .table__item {
+        padding: 0;
+        
+    }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px){
+
+    .box__card {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        padding: 20px;
+        flex-direction: column;
+    }
+    .box__news{
+        display: block;
+    }
+
+    .adaptive {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .card {
+        width: 80%;
+        margin-bottom: 50px;
+        border: 1px solid rgba(0, 0, 0, 0.152);
+        padding: 10px;
+        position: relative;
+        box-shadow: 5px 5px 5px grey;
+    }
+    
+    .news__card {
+        width: 80%;
+        margin-bottom: 50px;
+        box-shadow: 5px 5px 5px grey;
+        border: 1px solid rgba(0, 0, 0, 0.152);
+        padding: 10px;
+    }
 
 
+    .table__card {
+        border: 1px solid rgba(0, 0, 0, 0.152);
+        width: 90%;
+        box-shadow: 5px 5px 5px grey;
+        margin-bottom: 50px;
+        background-color: antiquewhite;
+    }
+
+    .box__table{
+        display: block;
+    }
+
+    .table__item {
+        padding: 0;
+        
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px){
+
+}

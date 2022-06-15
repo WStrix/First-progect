@@ -9,7 +9,23 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="second__menu">
+        <input type="checkbox" id="check-menu">
+        <label class="for__menu" for="check-menu"></label>
+        <div class="burger__line first"></div>
+        <div class="burger__line second"></div>
+        <div class="burger__line third"></div>
+        <div class="burger__line fourth"></div>
+        <nav class="main__menu">
+           <a href="">Dashboard</a>
+           <a href="../User Profile/userProfile.html">User Profile</a>
+           <a href="#">Map</a>
+           <a href="#">Notifications</a>
+           <a href="#">Support</a>
+            
+        </nav>
     
+    </div>
     <div>
         <ul class="menu">
             <p class="menu__header">Company</p> 
@@ -27,6 +43,7 @@
     <div class="content">
         <div class="header">Dashboard</div>
         <div class="box__card">
+            <div class="adaptive">
         <div class="card">
             <div class="card__item">
             <div class="card__img green"><img src="../icons/data_white.svg" alt=""></div>
@@ -45,6 +62,8 @@
             <hr>
             <div  class="card__footer"><img src="../icons/calendar.png" alt="">Get more space</div>
         </div>
+    </div>
+    <div class="adaptive">
         <div class="card">
             <div class="card__item">
             <div class="card__img blue"><img src="../icons/tag_white.png" alt=""></div>
@@ -64,10 +83,11 @@
             <div  class="card__footer"><img src="../icons/time.png" alt="">Get more space</div>
         </div>
     </div>
+</div>
 
 
-    <div class="box__card">
-    <div class="news__card ">
+    <div class="box__news">
+    <div class="news__card">
         <div><img class="news__img green" src="../icons/graphics.svg" alt=""></div>
         <p>Daily sales</p>
         <p>55% incerace in today sales</p>
@@ -94,7 +114,7 @@
 
 
 
-    <div class="box__card">
+    <div class="box__table">
         <div class="table__card">
             <div>
             <ul class="menu__table yellow">
@@ -121,15 +141,15 @@
                     <p>Employess Stats</p>
                     <p>New Employess on 19th September, 2019</p>
                 </div>
-                <div class="table__items"><div>ID</div><div>Name</div><div>Salary</div><div>Country</div></div>
+                <div class="table__items"><div class="table__items__header">ID</div><div class="table__items__header">Name</div><div class="table__items__header">Salary</div><div class="table__items__header">Country</div></div>
                 <hr>
-                <div class="table__items"><div>1</div><div>Dakota Rice</div><div>$36.738</div><div>Niger</div></div>
+                <div class="table__items"><div class="table__items__header">1</div><div class="table__items__header">Dakota Rice</div><div class="table__items__header">$36.738</div><div class="table__items__header">Niger</div></div>
                 <hr>
-                <div class="table__items"><div>1</div><div>Dakota Rice</div><div>$36.738</div><div>Niger</div></div>
+                <div class="table__items"><div class="table__items__header">1</div><div class="table__items__header">Dakota Rice</div><div class="table__items__header">$36.738</div><div class="table__items__header">Niger</div></div>
                 <hr>
-                <div class="table__items"><div>1</div><div>Dakota Rice</div><div>$36.738</div><div>Niger</div></div>
+                <div class="table__items"><div class="table__items__header">1</div><div class="table__items__header">Dakota Rice</div><div class="table__items__header">$36.738</div><div class="table__items__header">Niger</div></div>
                 <hr>
-                <div class="table__items"><div>1</div><div>Dakota Rice</div><div>$36.738</div><div>Niger</div></div>
+                <div class="table__items"><div class="table__items__header">1</div><div class="table__items__header">Dakota Rice</div><div class="table__items__header">$36.738</div><div class="table__items__header">Niger</div></div>
             </div>
 
 
@@ -148,6 +168,7 @@
     </div>
 
 
+    
     </div>
 
     
@@ -158,7 +179,7 @@
     </div>
 
 
-
+        
 
 </body>
 </html>

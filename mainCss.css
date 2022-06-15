@@ -16,6 +16,10 @@ body{
      
  
  }
+.menu__item{
+    padding: 10px;
+}
+
 
  
 a{
@@ -27,6 +31,7 @@ a{
 .menu__header{
     font-weight: bold;
     padding: 15px;
+    font-size: 1.2em;
     
     
 }
@@ -42,8 +47,10 @@ a{
 }
 
 .menu__item:hover{
-    background-color: antiquewhite;
+    background-color: rgb(124, 26, 62);
     cursor: pointer;
+    
+    
     text-align: center
 }
 
@@ -54,7 +61,7 @@ a{
 .header{
     font-weight: bold;
     font-size: 1.1em;
-    margin-bottom: 65px;
+    margin: 0 0 65px 30px;
     padding-top: 20px; 
 
 }
@@ -99,4 +106,132 @@ a{
 .signature{
     display: flex;
     justify-content: center;
+}
+
+
+.second__menu{
+    width: 50px;
+   
+    background-color: brown;
+    position: relative;
+    color: white;
+    text-align: center;
+    height: 40px;
+    display: none;
+}
+
+#check-menu{
+    display: none;
+}
+
+
+.for__menu{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 1;
+    line-height: 40px;
+}
+.burger__line{
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    width: 40px;
+    height: 2px;
+    background-color: white;
+    transition: .5s  all;
+
+}
+
+.second, .third{
+    top: 18px;
+
+}
+
+.fourth{
+    top: 28px;
+}
+
+.main__menu{
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    max-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    transition: .5s  all;
+}
+
+a{
+    display: block;
+    width: 90%;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    
+}
+
+#check-menu:checked ~ .main__menu{
+    max-height: 500px;
+    width: 320px;
+    font-size: 16px;
+}
+
+#check-menu:checked ~ .first{
+    display: none;
+}
+
+#check-menu:checked ~ .second{
+    transform: rotate(45deg);
+}
+
+#check-menu:checked ~ .third{
+    transform: rotate(-45deg);
+}
+
+#check-menu:checked ~ .fourth{
+    display: none;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 800px){
+    .menu{
+        display: none;
+    }  
+    
+    .second__menu{
+        display: block;
+        position: fixed;
+        z-index: 2;
+        
+    }
+
+    .second__menu a{
+        display: block;
+        width: 40%;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        border-top: 1px solid rgba(128, 128, 128, 0.464);
+        background-color: brown;
+    }
+    .content{
+        margin-left: 20px;
+        
+    }
+
+    .header{
+        font-weight: bold;
+        font-size: 1.1em;
+        margin: 0 0 65px 60px;
+        padding-top: 20px; 
+    
+    }
 }
