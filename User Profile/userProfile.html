@@ -29,7 +29,7 @@
 
     <div>
         <ul class="menu">
-            <p class="menu__header">Company</p> 
+            <li><p class="menu__header">Company</p> </li>
             <hr>
             <li class="menu__item"><a href="../Dashboard/index.html"><img src="../icons/dashboard_gray.svg" alt="">Dashboard</a></li>
             <li class="menu__item menu__item__active"><a href="#"><img src="../icons/account_gray.svg" alt="">User Profile</a></li>
@@ -54,67 +54,83 @@
         <div class="box__form">
             
         <div class="user__info other__info">
+            <label  for="userCompany">
             <p>Company</p>
-            <label  for="userCompany"></label>
             <input type="text">
+            </label>
         </div>
 
         <div class="user__info other__info">
+            <label  for="userName"  >
             <p>Username</p>
-            <label  for="userName"></label>
-            <input  type="text">
+            <input  type="text" id="userName" name="userName">
+            </label>
         </div>
 
         <div class="user__info other__info">
+            <label  for="userMail">
             <p>E-mail adress</p>
-            <label  for="userMail"></label>
-            <input  type="email">
+            <input  type="email" name="userMail" id="userMail">
+        </label>
         </div>
         </div>
 
        <div class="box__form">
         <div class="user__info name">
+            
+            <label for="userNameFirst">
             <p>First name</p>
-            <label for="userNameFirst"></label>
-            <input  type="text">
+            <input  type="text" class="first__lastName" name="userNameFirst" id="userNameFirst">
+            </label>
         </div>
         <div class="user__info name">
+            
+            <label for="userNameLast">
             <p>Last name</p>
-            <label for="userNameLast"></label>
-            <input  type="text">
+            <input  type="text" class="first__lastName" name="userNameLast" id="userNameLast">
+            </label>
         </div>
         </div>
         <div class="user__info">
+            <label for="userAdress">
             <p>Adress</p>
-            <label for="userAdress"></label>
-            <input  type="text">
+            <input  type="text" id="userAdress" name="userAdress">
+            </label>
         </div>
 
         <div class="box__form">
             <div class="user__info other__info">
+                
+                <label for="userCity">
                 <p>City</p>
-                <label for="userCity"></label>
-                <input  type="text">
+                <input  type="text" id="userCity" name="userCity">
+                </label>
             </div>
     
             <div class="user__info other__info">
+                
+                <label for="userCountry">
                 <p>Country</p>
-                <label for="userCountry"></label>
-                <input  type="text">
+                <input  type="text" id="userCountry" name="userCountry">
+                </label>
             </div>
     
             <div class="user__info other__info">
+                
+                <label for="userPostalCode">
                 <p>Postal code</p>
-                <label for="userPostalCode"></label>
-                <input  type="text">
+                <input  type="text" id="userPostalCode" name="userPostalCode">
+                </label>
             </div>
             </div>
 
             <div  class="user__info">
+            <label for="aboutUser">
             <p>About me</p>
-            <textarea name="aboutUser" class="third__box" id="" cols="70" rows="5">
+            <textarea name="aboutUser" class="third__box" id="aboutUser" cols="70" rows="5">
                 
             </textarea>
+        </label>
         </div>
 
         <div class="button__orient"><a class="button"  href="#">Update Profile</a></div>

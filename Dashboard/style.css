@@ -87,6 +87,9 @@
 
 }
 
+form{
+    width: 70%;
+}
 .menu__table{
     list-style-type: none;
     display: flex;
@@ -121,7 +124,7 @@
 }
 .table__items{
     display: flex;
-    padding: 0 50px;
+    padding: 0 10px;
     justify-content: space-between;
 
     align-items: center;
@@ -290,6 +293,19 @@
     .table__item {
         padding: 0;
         
+    }
+
+    .table__items__header {
+        width:  auto;
+    }
+    .menu__table{
+        width: 100%;
+        transform: translate(0%,-60%);
+    }
+
+    .second__table__header{
+        padding: 10px;
+        transform: translate(-0%,-20%);
     }
 }
 
