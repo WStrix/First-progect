@@ -160,12 +160,14 @@ form{
     }
 
     .card{
-        width: 95%;
+        width: 92%;
         margin-bottom: 60px;
         padding: 15px;
     }
 }
 
 @media screen and (min-width: 320px) and (max-width: 800px){
-
+    .card img{
+        width: 20%;
+    }
 }
